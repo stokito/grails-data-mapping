@@ -1,0 +1,32 @@
+version = "0.0.1.BUILD-SNAPSHOT"
+ext.orientVersion = "1.7.7"
+ext.gdmVersion = "2.0.7.RELEASE"
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    //maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "http://repo.springsource.org/libs-snapshot" }
+}
+
+dependencies {
+
+    compile "com.orientechnologies:orient-commons:$orientVersion",
+            "com.orientechnologies:orientdb-client:$orientVersion",
+            "com.orientechnologies:orientdb-core:$orientVersion",
+            "com.orientechnologies:orientdb-enterprise:$orientVersion"
+
+    if (version =~ /SNAPSHOT/) {
+        compile project(":grails-datastore-gorm"),
+                project(":grails-datastore-web"),
+                project(":grails-datastore-gorm-plugin-support")
+        testCompile project(":grails-datastore-gorm-test"),
+                project(":grails-datastore-gorm-tck")
+    } else {
+        compile "org.grails:grails-datastore-gorm:$gdmVersion",
+                "org.grails:grails-datastore-web:$gdmVersion",
+                "org.grails:grails-datastore-gorm-plugin-support:$gdmVersion"
+        testCompile "org.grails:grails-datastore-gorm-test:$gdmVersion",
+                "org.grails:grails-datastore-gorm-tck:$gdmVersion"
+    }
+
+}

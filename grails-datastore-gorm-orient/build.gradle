@@ -1,0 +1,15 @@
+version = "1.0.0.BUILD-SNAPSHOT"
+dependencies {
+    compile project(":grails-datastore-gorm"),
+            project(":grails-datastore-orient"),
+            project(":grails-datastore-gorm-plugin-support"),
+            project(":grails-datastore-core")
+
+     testCompile project(':grails-datastore-gorm-test'), 
+     			project(':grails-datastore-gorm-tck')
+
+	testRuntime 'javax.servlet:servlet-api:2.5'
+	testRuntime 'org.grails:grails-gorm:$grailsVersion'
+	testRuntime 'org.grails:grails-web:$grailsVersion'
+
+}
