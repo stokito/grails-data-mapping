@@ -40,18 +40,18 @@ include ("grails-datastore-core",
 //        'boot-plugins/gorm-mongodb-spring-boot',
 
         // GORM Implementations
-        'grails-datastore-gorm-cassandra',
-        'grails-datastore-gorm-jpa',
-        'grails-datastore-gorm-neo4j',
+//        'grails-datastore-gorm-cassandra',
+//        'grails-datastore-gorm-jpa',
+//        'grails-datastore-gorm-neo4j',
         'grails-datastore-gorm-redis',
         'grails-datastore-gorm-rest-client',
         'grails-datastore-gorm-orient',
         
 /*        'grails-datastore-gorm-riak',*/
-        'grails-datastore-gorm-mongodb',
-        'grails-datastore-gorm-gemfire',
+//        'grails-datastore-gorm-mongodb',
+//        'grails-datastore-gorm-gemfire',
         'grails-datastore-gorm-simpledb',
-        'grails-datastore-gorm-dynamodb',
+//        'grails-datastore-gorm-dynamodb',
         'grails-datastore-gorm-hibernate-core',
         'grails-datastore-gorm-hibernate',
         'grails-datastore-gorm-hibernate4'
