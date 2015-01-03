@@ -1,3 +1,13 @@
+grails-orient
+=============
+
+Grails and GORM bindings for OrientDB
+
+This is a work of Emrul Islam and was published in [mailing list](https://groups.google.com/forum/#!topic/orient-database/HE1fQefw14c)
+
+[GORM Datastore API - Reference Documentation](http://springsource.github.io/grails-data-mapping/manual/guide/index.html)
+
+
 [![Build Status](https://travis-ci.org/grails/grails-data-mapping.svg?branch=master)](https://travis-ci.org/grails/grails-data-mapping)
 
 Grails Datastore API (aka GORM)
