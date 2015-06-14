@@ -10,6 +10,10 @@ This is a work of Emrul Islam and was published in [mailing list](https://groups
 
 [![Build Status](https://travis-ci.org/grails/grails-data-mapping.svg?branch=master)](https://travis-ci.org/grails/grails-data-mapping)
 
+Project still under development but you can also see another implementation that already used in production
+https://github.com/eugene-kamenev/orientdb-groovy
+
+
 Grails Datastore API (aka GORM)
 ===
 
